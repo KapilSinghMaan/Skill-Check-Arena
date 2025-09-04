@@ -1,0 +1,218 @@
+/* body {
+  background: #000;
+}
+
+.navbar-outer .row .tabs {
+  overflow: hidden;
+}
+
+.tabs input {
+  visibility: hidden;
+  display: none;
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  gap: 2em;
+  background-color: #282d2b;
+}
+
+label i {
+  font-size: 1em;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+label span {
+  color: White;
+  margin-left: 6px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+
+label:hover {
+  opacity: 1;
+  filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff);
+}
+
+.tabs input:checked+label i,
+.tabs input:checked+label span {
+  color: #fff;
+  opacity: 1;
+  filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff);
+}
+
+.underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.15em;
+  width: 20%;
+  transition: 0.5s;
+}
+
+.underline::before {
+  content: '';
+  position: absolute;
+  left: 57%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 2.5em;
+  background: #fff;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff) drop-shadow(0 0 30px #fff) drop-shadow(0 0 50px #fff);
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  left: 57%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 2.5em;
+  background: #fff;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff) drop-shadow(0 0 30px #fff) drop-shadow(0 0 50px #fff) blur(5px);
+}
+
+.tabs input:nth-child(1):checked~.underline {
+  left: 2%;
+}
+
+.tabs input:nth-child(2):checked~.underline {
+  left: 18%;
+}
+
+.tabs input:nth-child(3):checked~.underline {
+  left: 36%;
+}
+
+.tabs input:nth-child(4):checked~.underline {
+  left: 53%;
+}
+
+.tabs input:nth-child(5):checked~.underline {
+  left: 73%;
+}
+
+.tabs input#home:checked ~ .underline { left: 2%; }
+.tabs input#profile:checked ~ .underline { left: 18%; } */
+
+body {
+    background-color: rgb(33, 31, 31);
+}
+
+.navbar-outer .row .tabs{
+    overflow: hidden;
+}
+
+.tabs input {
+    visibility: hidden;
+    display: none;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    gap: 2em;
+    background-color: #282d2b;
+}
+
+.buttons label i{
+    /* width: 20%; */
+    font-size: 1em;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.buttons label span{
+    /* width: 15%; */
+    /* font-size: 1em; */
+    color: White;
+    margin-left: 6px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+.buttons label:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff);
+}
+
+.tabs input:nth-child(1):checked~.buttons label:nth-child(1) i,
+.tabs input:nth-child(2):checked~.buttons label:nth-child(2) i,
+.tabs input:nth-child(3):checked~.buttons label:nth-child(3) i,
+.tabs input:nth-child(4):checked~.buttons label:nth-child(4) i,
+.tabs input:nth-child(5):checked~.buttons label:nth-child(5) i
+ {
+    color: #fff;
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff);
+}
+
+.underline{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.15em;
+    width: 20%;
+    /* background-color: aqua; */
+    transition: 0.5s;
+}
+
+.underline::before{
+    content: '';
+    position: absolute;
+    left: 57%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 2.5em;
+    background: #fff;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff) drop-shadow(0 0 30px #fff) drop-shadow(0 0 50px #fff);
+}
+
+.underline::after{
+    content: '';
+    position: absolute;
+    left: 57%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 2.5em;
+    background: #fff;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff) drop-shadow(0 0 30px #fff) drop-shadow(0 0 50px #fff) blur(5px);
+}
+
+.tabs input:nth-child(1):checked~.buttons .underline{
+    left: 2%;
+}
+
+.tabs input:nth-child(2):checked~.buttons .underline{
+    left: 18%;
+}
+.tabs input:nth-child(3):checked~.buttons .underline{
+    left: 36%;
+}
+.tabs input:nth-child(4):checked~.buttons .underline{
+    left: 53%;
+}
+.tabs input:nth-child(5):checked~.buttons .underline{
+    left: 73%;
+}
