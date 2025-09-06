@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import StuLogin from './Login/Student/StuLogin'
 import TeaLogin from './Login/Teacher/TeaLogin'
 import AdmLogin from './Login/Admin/AdmLogin'
+import Flow from './pages/Flow'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/flow' element={<Flow/>}/>
           <Route path='/student' element={<StuLogin />} />
           <Route path='/teacher' element={<TeaLogin />} />
           <Route path='/admin' element={<AdmLogin />} />
