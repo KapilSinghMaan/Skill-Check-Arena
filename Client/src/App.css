@@ -1,14 +1,12 @@
 body {
-    /* background: rgba(201, 189, 172, 0.707); */
     background: #cfd1e1;
+    font-family: consolas;
 }
 
 /* Login form css start */
 
 .login-container {
     height: 86vh;
-    /* border: 1px solid; */
-    font-family: consolas;
     overflow: hidden;
 }
 
@@ -67,8 +65,8 @@ body {
     }
 }
 
-.login-cover{
-    
+.login-cover {
+
     position: absolute;
     left: -5em;
     top: 0;
@@ -78,23 +76,23 @@ body {
     z-index: 10;
 }
 
-.login-content{
-    background: linear-gradient(#dbdae1,#a3aaba);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),15px 15px 15px rgba(0, 0, 0, 0.1),20px 10px 20px rgba(0, 0, 0, 0.1),50px 50px 80px rgba(0, 0, 0, 0.25),inset 3px 3px 2px #fff;
+.login-content {
+    background: linear-gradient(#dbdae1, #a3aaba);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), 15px 15px 15px rgba(0, 0, 0, 0.1), 20px 10px 20px rgba(0, 0, 0, 0.1), 50px 50px 80px rgba(0, 0, 0, 0.25), inset 3px 3px 2px #fff;
 }
 
-.login-logo{
+.login-logo {
     height: 2em;
     width: 2em;
     background: #444;
 }
 
-.login-content form{
+.login-content form {
     width: 65%;
     color: #444;
 }
 
-.login-inputbox input{
+.login-inputbox input {
     background: transparent;
     border: none;
     border-bottom: 2px solid #444;
@@ -102,14 +100,14 @@ body {
     color: #444;
 }
 
-.login-inputbox i{
+.login-inputbox i {
     position: absolute;
     left: 0;
     bottom: 1em;
     font-size: 1.25em;
 }
 
-.login-inputbox span{
+.login-inputbox span {
     position: absolute;
     left: 0;
     pointer-events: none;
@@ -119,7 +117,7 @@ body {
 }
 
 .login-inputbox input:focus~span,
-.login-inputbox input:valid~span{
+.login-inputbox input:valid~span {
     transform: translateY(-1.75em);
     font-size: 0.8em;
     background: #444;
@@ -127,24 +125,111 @@ body {
     padding: 2px 4px;
 }
 
-.login-links{
+.login-links {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.login-links a{
+.login-links a {
     text-decoration: none;
     color: #444;
 }
 
-.login-inputbox input[type="submit"]{
+.login-inputbox input[type="submit"] {
     color: white;
     background: #444;
-    &:hover{
+
+    &:hover {
         background-color: #333;
     }
 }
 
 /* Login form css end */
+
+/* Teacher Registration start */
+
+.stureg-outer {
+    width: 80%;
+}
+
+.stureg-inputbox-right input,
+select {
+    width: 100%;
+}
+
+.stureg-inputbox-right i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #201E50;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: -1;
+    color: #fff;
+}
+
+.stureg-inputbox-right input:focus,
+select:focus {
+    border: none;
+    outline: none;
+}
+
+.stureg-inputbox-right input:valid~i,
+.stureg-inputbox-right input:focus~i,
+.stureg-inputbox-right select:focus~i {
+    height: 100%;
+}
+
+.stureg-inputbox-right.active i {
+    height: 100%;
+}
+
+.stureg-inputbox-right input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #201E50 inset !important;
+    -webkit-text-fill-color: #fff !important;
+    border-radius: 20px;
+    -webkit-border-radius: 5px;
+}
+
+
+/* Teacher Registration end */
+
+/* Dashboard css start */
+
+.dashboard-left {
+    width: 20vw;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.dashboard-left.active {
+    width: 5em;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.dashboard-left.active .dash-text,
+.dashboard-left.active .dashboard-logo img{
+    display: none;
+}
+
+.dashboard-right {
+    width: 80vw;
+    flex-grow: 1;
+    height: 100vh;
+    left: 20vw;
+    transition: 0.5s;
+}
+
+.dashboard-right.active {
+    width: 90vw;
+    left: 5em;
+}
+
+/* Dashboard css end */
