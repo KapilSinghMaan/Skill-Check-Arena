@@ -215,8 +215,23 @@ select:focus {
 }
 
 .dashboard-left.active .dash-text,
-.dashboard-left.active .dashboard-logo img{
+.dashboard-left.active .dash-logout span {
     display: none;
+    transition: 0.5s;
+}
+
+.dashboard-left ul li {
+    padding-left: 0.75em;
+
+    &:hover {
+        background-color: #444a63a7;
+        color: white;
+    }
+
+}
+
+.dashboard-left ul li span{
+    text-wrap: none;
 }
 
 .dashboard-right {
@@ -228,8 +243,28 @@ select:focus {
 }
 
 .dashboard-right.active {
-    width: 90vw;
+    width: 20vw;
     left: 5em;
+}
+
+.dashboard-right #smallbig {
+    left: 1.5em;
+    transition: 0.5s;
+}
+
+.dashboard-right.active #smallbig {
+    left: 7.5em;
+}
+
+.dashboard-right.active .dash-logout {
+    position: relative;
+    left: 0;
+}
+
+.dash-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* Dashboard css end */
