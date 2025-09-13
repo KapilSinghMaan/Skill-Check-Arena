@@ -205,6 +205,8 @@ select:focus {
 .dashboard-left {
     width: 20vw;
     height: 100vh;
+    overflow: scroll;
+    scrollbar-width: none;
     transition: 0.5s;
 }
 
@@ -220,17 +222,16 @@ select:focus {
     transition: 0.5s;
 }
 
-.dashboard-left ul li {
+.dashboard-left ul li a {
     padding-left: 0.75em;
 
     &:hover {
         background-color: #444a63a7;
-        color: white;
+        color: white !important;
     }
-
 }
 
-.dashboard-left ul li span{
+.dashboard-left ul li span {
     text-wrap: none;
 }
 
@@ -238,8 +239,11 @@ select:focus {
     width: 80vw;
     flex-grow: 1;
     height: 100vh;
+    overflow: scroll;
+    scrollbar-width: none;
     left: 20vw;
     transition: 0.5s;
+    background-color: #444a63a7;
 }
 
 .dashboard-right.active {
@@ -250,10 +254,12 @@ select:focus {
 .dashboard-right #smallbig {
     left: 1.5em;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .dashboard-right.active #smallbig {
     left: 7.5em;
+    cursor: pointer;
 }
 
 .dashboard-right.active .dash-logout {
@@ -261,10 +267,16 @@ select:focus {
     left: 0;
 }
 
-.dash-text{
+.dash-text {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.dash-right-header{
+    height: 5em;
+    width: 100%;
+    background: #fff;
 }
 
 /* Dashboard css end */
