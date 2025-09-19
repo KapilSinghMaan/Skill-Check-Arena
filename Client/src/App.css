@@ -252,13 +252,15 @@ select:focus {
 }
 
 .dashboard-right #smallbig {
-    left: 1.5em;
+    left: 2em;
+    top: 0.3em;
     transition: 0.5s;
     cursor: pointer;
 }
 
 .dashboard-right.active #smallbig {
     left: 7.5em;
+    top: 0.3em;
     cursor: pointer;
 }
 
@@ -275,8 +277,61 @@ select:focus {
 
 .dash-right-header{
     height: 5em;
-    width: 100%;
     background: #fff;
+}
+
+.dash-card{
+    height: 16em;
+    width: 20em;
+    transition: 0.5s;
+    &:hover{
+        transform: scaleY(1.2) scaleX(1.1);
+    }
+}
+
+.dash-card .imgbox{
+    position: absolute;
+    top: 1em;
+    height: 10em;
+    width: 16em;
+    border-radius: 11px;
+    background: #000;
+    transition: 0.5s;
+}
+
+.imgbox i{
+    font-size: 5em;
+}
+
+.dash-card:hover .imgbox{
+    top: -4em;
+    transform: scaleY(0.75) scaleX(0.85);
+}
+
+.content{
+    top: 14em;
+    height: 3em;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: justify;
+}
+
+.dash-card:hover .content{
+    top: 6em;
+    height: 10.5em;
+}
+
+.content h2{
+    text-align: center;
+    margin-top: 2px;
+}
+
+.content a{
+    display: inline-block;
+    background: var(--clr);
+    padding: 8px 15px;
+    font-weight: 500;
+    border-radius: 7px;
 }
 
 /* Dashboard css end */
