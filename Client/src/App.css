@@ -326,7 +326,7 @@ select:focus {
 }
 
 .dash-home-left{
-    width: 70em;
+    width: 65em;
 }
 
 .dashboard-right.active .dash-home-right{
@@ -335,10 +335,22 @@ select:focus {
 }
 
 .dash-home-right{
-    width: 20em;
-    height: 50vh;
-    border: 1px solid;
+    width: 25em;
+    height: 84vh;
+    /* border: 1px solid; */
     transition: 0.5s;
+}
+
+.dash-clock{
+    height: 40vh;
+    width: 22em;
+    border: 1px dotted red;
+}
+
+.dash-calendar{
+    height: 42vh;
+    width: 22em;
+    border: 5px double gold;
 }
 
 /* Dashboard css end */

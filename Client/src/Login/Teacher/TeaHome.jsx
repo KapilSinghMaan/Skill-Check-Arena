@@ -5,8 +5,8 @@ const TeaHome = () => {
     return (
         <>
             <div className="row m-0 d-flex align-items-center justify-content-center">
-                <div class="m-0 dash-home-left d-flex align-items-center justify-content-center position-relative flex-wrap gap-5">
-                    <div class="dash-card mt-4 position-relative shadow d-flex align-items-start justify-content-center bg-light rounded-4">
+                <div class="m-0 dash-home-left d-flex align-items-center justify-content-center position-relative flex-wrap gap-4">
+                    <div class="dash-card position-relative shadow d-flex align-items-start justify-content-center bg-light rounded-4">
                         <div class="imgbox d-flex align-items-center justify-content-center">
                             <i class="fa-solid fa-clipboard-list text-white"></i>
                         </div>
@@ -16,7 +16,7 @@ const TeaHome = () => {
                             <div className="dash-card-btn py-3 d-flex align-items-center justify-content-center"><Link to="/" class="text-decoration-none btn btn-outline-dark">Create Quiz</Link></div>
                         </div>
                     </div>
-                    <div class="dash-card mt-4 position-relative shadow d-flex align-items-start justify-content-center bg-light rounded-4">
+                    <div class="dash-card position-relative shadow d-flex align-items-start justify-content-center bg-light rounded-4">
                         <div class="imgbox d-flex align-items-center justify-content-center">
                             <i class="fa-solid fa-file-upload text-white"></i>
                         </div>
@@ -26,7 +26,7 @@ const TeaHome = () => {
                             <div className="dash-card-btn py-3 d-flex align-items-center justify-content-center"><Link to="/" class="text-decoration-none btn btn-outline-dark">View Submission</Link></div>
                         </div>
                     </div>
-                    <div class="dash-card mt-4 position-relative shadow d-flex align-items-start justify-content-center bg-light rounded-4" >
+                    <div class="dash-card position-relative shadow d-flex align-items-start justify-content-center bg-light rounded-4" >
                         <div class="imgbox d-flex align-items-center justify-content-center">
                             <i class="fa-regular fa-circle-question text-white"></i>
                         </div>
@@ -36,7 +36,7 @@ const TeaHome = () => {
                             <div className="dash-card-btn py-3 d-flex align-items-center justify-content-center"><Link to="/" class="text-decoration-none btn btn-outline-dark">Visit Bank</Link></div>
                         </div>
                     </div>
-                    <div class="dash-card position-relative shadow d-flex align-items-start justify-content-center bg-light rounded-4" >
+                    <div class="dash-card mt-3 position-relative shadow d-flex align-items-start justify-content-center bg-light rounded-4" >
                         <div class="imgbox d-flex align-items-center justify-content-center">
                             <i class="fa-solid fa-comments text-white"></i>
                         </div>
@@ -46,7 +46,7 @@ const TeaHome = () => {
                             <div className="dash-card-btn py-3 d-flex align-items-center justify-content-center"><Link to="/" class="text-decoration-none btn btn-outline-dark">Review Feedback</Link></div>
                         </div>
                     </div>
-                    <div class="dash-card position-relative shadow d-flex align-items-start justify-content-center bg-light rounded-4" >
+                    <div class="dash-card mt-3 position-relative shadow d-flex align-items-start justify-content-center bg-light rounded-4" >
                         <div class="imgbox d-flex align-items-center justify-content-center">
                             <i class="fa-solid fa-chart-line text-white"></i>
                         </div>
@@ -56,7 +56,7 @@ const TeaHome = () => {
                             <div className="dash-card-btn py-3 d-flex align-items-center justify-content-center"><Link to="/" class="text-decoration-none btn btn-outline-dark">See Analysics</Link></div>
                         </div>
                     </div>
-                    <div class="dash-card position-relative shadow d-flex align-items-start justify-content-center bg-light rounded-4" >
+                    <div class="dash-card mt-3 position-relative shadow d-flex align-items-start justify-content-center bg-light rounded-4" >
                         <div class="imgbox d-flex align-items-center justify-content-center">
                             <i class="fa-solid fa-user-gear text-white"></i>
                         </div>
@@ -67,9 +67,9 @@ const TeaHome = () => {
                         </div>
                     </div>
                 </div>
-                <div className="dash-home-right">
-                    <div className="right-up"></div>
-                    <div className="right-down"></div>
+                <div className="dash-home-right my-2 p-0 ps-4">
+                    <div className="dash-clock"></div>
+                    <div className="dash-calendar mt-3"></div>
                 </div>
             </div>
         </>
