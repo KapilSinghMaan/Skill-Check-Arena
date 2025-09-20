@@ -309,29 +309,40 @@ select:focus {
 }
 
 .content{
-    top: 14em;
-    height: 3em;
+    top: 12.5em;
+    height: 1.9em;
     overflow: hidden;
     transition: 0.5s;
     text-align: justify;
 }
 
 .dash-card:hover .content{
-    top: 6em;
+    top: 5em;
     height: 10.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.content h2{
-    text-align: center;
-    margin-top: 2px;
+.dash-home-left{
+    width: 70em;
 }
 
-.content a{
-    display: inline-block;
-    background: var(--clr);
-    padding: 8px 15px;
-    font-weight: 500;
-    border-radius: 7px;
+.dashboard-right.active .dash-home-right{
+    display: none;
+    transition: 0.5s;
+}
+
+.dash-home-right{
+    width: 20em;
+    height: 50vh;
+    border: 1px solid;
+    transition: 0.5s;
 }
 
 /* Dashboard css end */
+
+.justify-text{
+    text-align: center;
+}
