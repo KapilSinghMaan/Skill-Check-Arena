@@ -337,14 +337,124 @@ select:focus {
 .dash-home-right{
     width: 25em;
     height: 84vh;
-    /* border: 1px solid; */
     transition: 0.5s;
 }
 
 .dash-clock{
-    height: 40vh;
-    width: 22em;
-    border: 1px dotted red;
+    height: 18em;
+    width: 18em;
+}
+
+.clock-container {
+    position: relative;
+    /* background: #2f363e;
+    border-top-left-radius: 15em;
+    border-top-right-radius: 15em;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.75),
+        10px 10px 70px rgba(0, 0, 0, 0.25),
+        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.75); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dash-clock {
+    position: relative;
+    border-radius: 50%;
+    background-color: #2f363e;
+    box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
+        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 0.75em;
+        height: 0.75em;
+        background-color: #2f363e;
+        border: 3px solid white;
+        border-radius: 50%;
+        z-index: 100;
+    }
+}
+
+.dash-clock span{
+    position: absolute;
+    inset: 0.1em;
+    color: #fff;
+    text-align: center;
+    transform: rotate(calc(30deg*var(--i)));
+}
+
+.dash-clock span b{
+    font-size: 1.5em;
+    opacity: 0.25;
+    font-weight: 600;
+    display: inline-block;
+    transform: rotate(calc(-30deg*var(--i)));
+
+}
+
+.dash-clock .circle{
+    position: absolute;
+    width: 13em;
+    height: 13em;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 1em;
+        height: 1em;
+        top: -8.5px;
+        border-radius: 50%;
+        background: var(--clr);
+        box-shadow: 0 0 20px var(--clr),
+        0 0 60px var(--clr);
+    }
+}
+
+.dash-clock .circle i{
+    position: absolute;
+    width: 0.35em;
+    height: 52%;
+    background: var(--clr);
+    opacity: 0.75;
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+}
+
+.dash-clock .circle:nth-child(1) i{
+    width: 2px;
+}
+
+.dash-clock .circle:nth-child(2) i{
+    width: 6px;
+}
+
+.dash-clock .circle2{
+    
+    width: 10em;
+    height: 10em;
+    z-index: 9;
+}
+
+.dash-clock .circle3{
+    width: 7em;
+    height: 7em;
+    z-index: 8;
 }
 
 .dash-calendar{
@@ -352,6 +462,8 @@ select:focus {
     width: 22em;
     border: 5px double gold;
 }
+
+
 
 /* Dashboard css end */
 
