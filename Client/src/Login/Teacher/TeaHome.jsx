@@ -92,9 +92,9 @@ const TeaHome = () => {
                     <div className="clock-container">
                         <div className="dash-clock">
 
-                            <div className="circle" id="sc" style={{ '--clr': '#04fc43' }}><i></i></div>
-                            <div className="circle circle2" id="mn" style={{ '--clr': '#fee800' }}><i></i></div>
-                            <div className="circle circle3" id="hr" style={{ '--clr': '#ff2972' }}><i></i></div>
+                            <div className="circle" id="sc" style={{ '--clr': '#2C0735' }}><i></i></div>
+                            <div className="circle circle2" id="mn" style={{ '--clr': '#2E2D4D' }}><i></i></div>
+                            <div className="circle circle3" id="hr" style={{ '--clr': '#161B33' }}><i></i></div>
 
                             <span style={{ '--i': 1 }}><b>1</b></span>
                             <span style={{ '--i': 2 }}><b>2</b></span>
@@ -111,8 +111,8 @@ const TeaHome = () => {
                         </div>
                     </div>
 
-                </div>
                 <div className="dash-calendar mt-3"></div>
+                </div>
             </div>
         </>
     )

@@ -347,14 +347,6 @@ select:focus {
 
 .clock-container {
     position: relative;
-    /* background: #2f363e;
-    border-top-left-radius: 15em;
-    border-top-right-radius: 15em;
-    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.75),
-        10px 10px 70px rgba(0, 0, 0, 0.25),
-        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
-        inset -5px -5px 15px rgba(0, 0, 0, 0.75); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -364,7 +356,7 @@ select:focus {
 .dash-clock {
     position: relative;
     border-radius: 50%;
-    background-color: #2f363e;
+    background-color: #06060723;
     box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
         inset 5px 5px 10px rgba(0, 0, 0, 0.5),
         inset 5px 5px 20px rgba(255, 255, 255, 0.2),
@@ -395,7 +387,7 @@ select:focus {
 
 .dash-clock span b{
     font-size: 1.5em;
-    opacity: 0.25;
+    opacity: 0.75;
     font-weight: 600;
     display: inline-block;
     transform: rotate(calc(-30deg*var(--i)));
