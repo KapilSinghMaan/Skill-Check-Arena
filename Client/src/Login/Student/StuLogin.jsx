@@ -29,7 +29,7 @@ const StuLogin = () => {
                                 <Link to="/stureg"><i className='fa-solid fa-user-plus'></i>Sign Up</Link>
                             </div>
                             <div className="login-inputbox position-relative w-100 mt-3">
-                                <input type="submit" value="Login" className='position-relative w-100 px-4 py-2 fs-4' required />
+                               <Link to="/studash/"> <input type="submit" value="Login" className='position-relative w-100 px-4 py-2 fs-4' required /></Link>
                             </div>
                         </form>
                     </div>

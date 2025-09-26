@@ -17,6 +17,14 @@ import QuestionBank from './Login/Teacher/QuestionBank'
 import Notification from './Login/Teacher/Notification'
 import Feedback from './Login/Teacher/Feedback'
 import ProfileSetting from './Login/Teacher/ProfileSetting' 
+import StuDashboard from './Login/Student/StuDashboard'
+import StuHome from './Login/Student/StuHome'
+import AvailableQuiz from './Login/Student/AvailableQuiz'
+import MyAttempts from './Login/Student/MyAttempts'
+import StuProfileSetting from './Login/Student/StuProfileSetting'
+import QuizInProcess from './Login/Student/QuizInProcess'
+import Results from './Login/Student/Results'
+import StuDiscussion from './Login/Student/StuDiscussion'
 
 function App() {
 
@@ -42,6 +50,16 @@ function App() {
               <Route path='notification' element={<Notification/>}></Route>
               <Route path='feedback' element={<Feedback/>}></Route>
               <Route path='profilesetting' element={<ProfileSetting/>}></Route>
+          </Route>
+
+          <Route path='/studash/' element={<StuDashboard/>}>
+              <Route index element={<StuHome/>}></Route>
+              <Route path='availablequiz' element={<AvailableQuiz/>}></Route>
+              <Route path='myattempts' element={<MyAttempts/>}></Route>
+              <Route path='quizinprocess' element={<QuizInProcess/>}></Route>
+              <Route path='results' element={<Results/>}></Route>
+              <Route path='studiscussion' element={<StuDiscussion/>}></Route>
+              <Route path='stuprofilesetting' element={<StuProfileSetting/>}></Route>
           </Route>
         </Routes>
       </Router>
