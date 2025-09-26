@@ -25,6 +25,9 @@ import StuProfileSetting from './Login/Student/StuProfileSetting'
 import QuizInProcess from './Login/Student/QuizInProcess'
 import Results from './Login/Student/Results'
 import StuDiscussion from './Login/Student/StuDiscussion'
+import AdmDashboard from './Login/Admin/AdmDashboard'
+import AdmHome from './Login/Admin/AdmHome'
+import Reports from './Login/Admin/Reports'
 
 function App() {
 
@@ -61,6 +64,12 @@ function App() {
               <Route path='studiscussion' element={<StuDiscussion/>}></Route>
               <Route path='stuprofilesetting' element={<StuProfileSetting/>}></Route>
           </Route>
+
+          <Route path='admindash' element={<AdmDashboard/>}>
+              <Route index element={<AdmHome/>}></Route>
+              <Route path='reports' element={<Reports/>}></Route>
+          </Route>
+
         </Routes>
       </Router>
     </>
