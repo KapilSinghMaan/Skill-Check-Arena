@@ -28,6 +28,7 @@ import StuDiscussion from './Login/Student/StuDiscussion'
 import AdmDashboard from './Login/Admin/AdmDashboard'
 import AdmHome from './Login/Admin/AdmHome'
 import Reports from './Login/Admin/Reports'
+import SubmissionLogs from './Login/Admin/SubmissionLogs'
 
 function App() {
 
@@ -68,6 +69,7 @@ function App() {
           <Route path='admindash' element={<AdmDashboard/>}>
               <Route index element={<AdmHome/>}></Route>
               <Route path='reports' element={<Reports/>}></Route>
+              <Route path='submissionlogs' element={<SubmissionLogs/>}></Route>
           </Route>
 
         </Routes>
