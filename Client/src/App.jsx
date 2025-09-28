@@ -29,6 +29,7 @@ import AdmDashboard from './Login/Admin/AdmDashboard'
 import AdmHome from './Login/Admin/AdmHome'
 import Reports from './Login/Admin/Reports'
 import SubmissionLogs from './Login/Admin/SubmissionLogs'
+import SystemSetting from './Login/Admin/SystemSetting'
 
 function App() {
 
@@ -70,6 +71,7 @@ function App() {
               <Route index element={<AdmHome/>}></Route>
               <Route path='reports' element={<Reports/>}></Route>
               <Route path='submissionlogs' element={<SubmissionLogs/>}></Route>
+              <Route path='systemsetting' element={<SystemSetting/>}></Route>
           </Route>
 
         </Routes>
