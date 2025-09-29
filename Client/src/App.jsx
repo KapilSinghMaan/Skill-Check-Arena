@@ -70,7 +70,7 @@ function App() {
               <Route path='stuprofilesetting' element={<StuProfileSetting/>}></Route>
           </Route>
 
-          <Route path='admindash' element={<AdmDashboard/>}>
+          <Route path='/admindash/' element={<AdmDashboard/>}>
               <Route index element={<AdmHome/>}></Route>
               <Route path='reports' element={<Reports/>}></Route>
               <Route path='submissionlogs' element={<SubmissionLogs/>}></Route>
