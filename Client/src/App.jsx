@@ -30,6 +30,9 @@ import AdmHome from './Login/Admin/AdmHome'
 import Reports from './Login/Admin/Reports'
 import SubmissionLogs from './Login/Admin/SubmissionLogs'
 import SystemSetting from './Login/Admin/SystemSetting'
+import UserManagement from './Login/Admin/UserManagement'
+import QuizOverSight from './Login/Admin/QuizOverSight'
+import DashboardOverview from './Login/Admin/DashboardOverview'
 
 function App() {
 
@@ -72,6 +75,9 @@ function App() {
               <Route path='reports' element={<Reports/>}></Route>
               <Route path='submissionlogs' element={<SubmissionLogs/>}></Route>
               <Route path='systemsetting' element={<SystemSetting/>}></Route>
+              <Route path='usermanagement' element={<UserManagement/>}></Route>
+              <Route path='quizoversight' element={<QuizOverSight/>}></Route>
+              <Route path='dashboardoverview' element={<DashboardOverview/>}></Route>
           </Route>
 
         </Routes>
