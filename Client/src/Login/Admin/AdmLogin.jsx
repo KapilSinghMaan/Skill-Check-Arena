@@ -28,7 +28,7 @@ const AdmLogin = () => {
                 <Link to="/"><i className='fa-solid fa-question'></i>Forget Password</Link>
               </div>
               <div className="login-inputbox position-relative w-100 mt-3">
-                <input type="submit" value="Login" className='position-relative w-100 px-4 py-2 fs-4' required/>
+                <Link to="/admindash/"><input type="submit" value="Login" className='position-relative w-100 px-4 py-2 fs-4' required/></Link>
               </div>
             </form>
           </div>
