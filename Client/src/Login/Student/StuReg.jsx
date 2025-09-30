@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../../components/Header'
 
 const StuReg = () => {
-  
+
   useEffect(() => {
     document.querySelectorAll('.trigger-underline').forEach(select => {
       select.addEventListener('change', function () {
@@ -71,15 +71,6 @@ const StuReg = () => {
             <div className="row stureg-inputbox w-100 my-3">
               <div className="col-sm-4 px-3 m-0 p-0 stureg-inputbox-left"><label htmlFor="aadhar" >Aadhar Number</label></div>
               <div className="col-sm-8 m-0 p-0 stureg-inputbox-right position-relative"><input type="text" placeholder=' ' id='aadhar' name='aadhar' className='border-0 bg-transparent px-2' required />
-                <i></i></div>
-            </div>
-            <div className="row stureg-inputbox w-100 my-3">
-              <div className="col-sm-4 px-3 m-0 p-0 stureg-inputbox-left"><label htmlFor="department" >Department</label></div>
-              <div className="col-sm-8 m-0 p-0 stureg-inputbox-right position-relative">
-                <select name="department" id="department" className='border-0 bg-transparent px-2 trigger-underline' required >
-                  <option value="">--Select Department--</option>
-
-                </select>
                 <i></i></div>
             </div>
             <div className="row stureg-inputbox w-100 my-3">
