@@ -28,6 +28,7 @@ const AdmDashboard = () => {
             </div>
             <ul className='list-unstyled fs-3'>
               <li className='my-3 d-flex'><Link to="/admindash/" className='d-flex align-items-center text-decoration-none text-dark w-100'><i className='my-3 fa-regular fa-house'></i> <span className='dash-text '>Home</span></Link></li>
+              <li className='my-3 d-flex'><Link to="/admindash/subject" className="d-flex align-items-center text-decoration-none text-dark w-100"><i className='my-3 fas fa-book'></i> <span className='dash-text '>Subject</span></Link></li>
               <li className='my-3 d-flex'><Link to="/admindash/reports" className="d-flex align-items-center text-decoration-none text-dark w-100"><i className='my-3 fas fa-clipboard-list'></i> <span className='dash-text '>Reports</span></Link></li>
               <li className='my-3 d-flex'><Link to="/admindash/submissionlogs" className="d-flex align-items-center text-decoration-none text-dark w-100"><i className='my-3 fas fa-list-check'></i> <span className='dash-text '>Submission Logs</span></Link></li>
               <li className='my-3 d-flex'><Link to="/admindash/systemsetting" className="d-flex align-items-center text-decoration-none text-dark w-100"><i className='my-3 fas fa-file-upload'></i> <span className='dash-text '>System Setting</span></Link></li>

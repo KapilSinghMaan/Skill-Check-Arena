@@ -464,6 +464,69 @@ select:focus {
 
 /* Dashboard css end */
 
+/* field input css start */
+
+.outer {
+    height: 55vh;
+    width: 68vw;
+}
+
+.outer form {
+    width: 99%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.inputBox {
+    width: 100%;
+    border: 1px solid ;
+    border-radius: 10px;
+}
+
+.inputBox label {
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    transition: 0.5s;
+    transform: translateY(50%);
+    background-color: #fff;
+}
+
+.inputBox:focus-within label {
+    top: -25px;
+}
+
+
+.inputBox textarea:not(:placeholder-shown)~label,
+.inputBox input:not(:placeholder-shown)~label {
+    top: -25px;
+}
+
+.inputBox input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px #fff inset !important;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+    -webkit-text-fill-color: #000 !important;
+    transition: background-color 5000s ease-in-out 0s;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+
+
+.inputBox input,
+textarea {
+    background: transparent;
+    /* background-color: #fff; */
+    outline: none;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.outer form input[type="submit"] {
+    width: 12vw;
+}
+
+/* field input css end */
+
 .justify-text{
     text-align: center;
 }

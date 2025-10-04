@@ -33,6 +33,7 @@ import SystemSetting from './Login/Admin/SystemSetting'
 import UserManagement from './Login/Admin/UserManagement'
 import QuizOverSight from './Login/Admin/QuizOverSight'
 import DashboardOverview from './Login/Admin/DashboardOverview'
+import Subject from './Login/Admin/Subject'
 
 function App() {
 
@@ -78,6 +79,7 @@ function App() {
               <Route path='usermanagement' element={<UserManagement/>}></Route>
               <Route path='quizoversight' element={<QuizOverSight/>}></Route>
               <Route path='dashboardoverview' element={<DashboardOverview/>}></Route>
+              <Route path='subject' element={<Subject/>}></Route>
           </Route>
 
         </Routes>
