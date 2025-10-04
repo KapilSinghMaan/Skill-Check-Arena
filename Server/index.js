@@ -7,6 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/admin',require('./routes/adminRoute'));
+app.use('/api/subject',require('./routes/subjectRoute'));
 
 const URL ="mongodb://localhost:27017/SkillCA"
 
