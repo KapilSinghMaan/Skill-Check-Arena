@@ -91,7 +91,7 @@ const Subject = () => {
             <div className="row m-0 px-2">
                 <div className="container p-0">
                     <div className="row m-0 d-flex align-items-center justify-content-center">
-                        <div className="col-sm-5 p-0 position-relative rounded-4 mt-5 outer">
+                        <div className="col-sm-5 p-0 position-relative rounded-4 mt-3 outer">
                             <form className='position-absolute top-0 start-0 m-1 p-2 rounded-4 d-flex flex-column' method='post' onSubmit={submitChange}>
                                 <h2 class="text-dark text-center fw-semibold ls-lg">Add Subject</h2>
                                 <div className="inputBox position-relative mt-3">
