@@ -36,9 +36,7 @@ const AdmDashboard = () => {
               <li className='my-3 d-flex'><Link to="/admindash/quizoversight" className="d-flex align-items-center text-decoration-none text-dark w-100"><i className='my-3 fa-regular fa-circle-question'></i> <span className='dash-text '>Quiz Oversight</span></Link></li>
               <li className='my-3 d-flex'><Link to="/admindash/dashboardoverview" className="d-flex align-items-center text-decoration-none text-dark w-100"><i className='my-3 fas fa-bell'></i> <span className='dash-text '>Dashboard Overview</span></Link></li>
             </ul>
-
             <div className="dash-logout fs-3 mt-3 d-flex align-items-center justify-content-center"><Link to="/admin" className="text-decoration-none text-dark"><i class="fa-solid fa-right-from-bracket"></i> <span>LOGOUT</span></Link></div>
-
           </div>
           <div className="dashboard-right p-0 active m-0">
             <div className="position-sticky z-1 row mx-2 dash-right-header d-flex align-items-center rounded-4 shadow">
