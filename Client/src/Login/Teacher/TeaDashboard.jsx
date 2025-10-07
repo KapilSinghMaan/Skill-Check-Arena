@@ -42,8 +42,8 @@ const TeaDashboard = () => {
 
           </div>
           <div className="dashboard-right p-0 active m-0">
-            <i className='fas fa-bars fs-1 position-absolute m-3' id='smallbig'></i>
-            <div className="row m-2 dash-right-header d-flex align-items-center rounded-4 shadow">
+            <div className="position-sticky z-1 row m-2 dash-right-header d-flex align-items-center rounded-4 shadow">
+              <i className='fas fa-bars fs-1 position-absolute m-3 cursor-pointer' id='smallbig'></i>
               <div className="col-sm-4 p-0"><p className='ms-5 m-0 ps-4 fs-3'>Hello,Your name name</p></div>
               <div className="col-sm-4 border p-0"><input type="text" className='w-100' /></div>
               <div className="col-sm-2 offset-2">
@@ -60,7 +60,7 @@ const TeaDashboard = () => {
                     <li><a class="dropdown-item" href="#">Profile</a></li>
                     <li><a class="dropdown-item" href="#">Change Password</a></li>
 
-          
+
                     <li><hr class="dropdown-divider" /></li>
                     <li><a class="dropdown-item" href="#">Logout</a></li>
                   </ul>
